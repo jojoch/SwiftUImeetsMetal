@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAD55D132BD14B4A00070985 /* SwiftUImeetsMetalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D122BD14B4A00070985 /* SwiftUImeetsMetalApp.swift */; };
+		CAD55D152BD14B4A00070985 /* RecolorExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D142BD14B4A00070985 /* RecolorExampleView.swift */; };
+		CAD55D172BD14B4B00070985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD55D162BD14B4B00070985 /* Assets.xcassets */; };
+		CAD55D1A2BD14B4B00070985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD55D192BD14B4B00070985 /* Preview Assets.xcassets */; };
+		CAD55D212BD14CA900070985 /* AssetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D202BD14CA800070985 /* AssetImage.swift */; };
+		CAD55D262BD14DFA00070985 /* ColorEffectShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D252BD14DFA00070985 /* ColorEffectShaders.metal */; };
+		CAD55D292BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D282BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift */; };
+		CAD55D2B2BD2936C00070985 /* LayerEffectShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D2A2BD2936C00070985 /* LayerEffectShaders.metal */; };
+		CAD55D2E2BD297CE00070985 /* PixelateExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D2D2BD297CE00070985 /* PixelateExampleView.swift */; };
+		CAD55D302BD2A2C800070985 /* DotsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */; };
+		CAD55D332BD2A4C400070985 /* DistortionEffectShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D322BD2A4C400070985 /* DistortionEffectShaders.metal */; };
+		CAD55D352BD2CAA500070985 /* WaveExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D342BD2CAA500070985 /* WaveExampleView.swift */; };
+		CAD55D372BD328CA00070985 /* AbstractTextureExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D362BD328CA00070985 /* AbstractTextureExampleView.swift */; };
+		CAD55D392BD339FE00070985 /* OtherShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CAD55D382BD339FE00070985 /* OtherShaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAD55D0F2BD14B4A00070985 /* SwiftUImeetsMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUImeetsMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD55D122BD14B4A00070985 /* SwiftUImeetsMetalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUImeetsMetalApp.swift; sourceTree = "<group>"; };
+		CAD55D142BD14B4A00070985 /* RecolorExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecolorExampleView.swift; sourceTree = "<group>"; };
+		CAD55D162BD14B4B00070985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAD55D192BD14B4B00070985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAD55D202BD14CA800070985 /* AssetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetImage.swift; sourceTree = "<group>"; };
+		CAD55D252BD14DFA00070985 /* ColorEffectShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorEffectShaders.metal; sourceTree = "<group>"; };
+		CAD55D282BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAndWhiteFilterExampleView.swift; sourceTree = "<group>"; };
+		CAD55D2A2BD2936C00070985 /* LayerEffectShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LayerEffectShaders.metal; sourceTree = "<group>"; };
+		CAD55D2D2BD297CE00070985 /* PixelateExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelateExampleView.swift; sourceTree = "<group>"; };
+		CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsExampleView.swift; sourceTree = "<group>"; };
+		CAD55D322BD2A4C400070985 /* DistortionEffectShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DistortionEffectShaders.metal; sourceTree = "<group>"; };
+		CAD55D342BD2CAA500070985 /* WaveExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveExampleView.swift; sourceTree = "<group>"; };
+		CAD55D362BD328CA00070985 /* AbstractTextureExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTextureExampleView.swift; sourceTree = "<group>"; };
+		CAD55D382BD339FE00070985 /* OtherShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = OtherShaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAD55D0C2BD14B4A00070985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAD55D062BD14B4A00070985 = {
+			isa = PBXGroup;
+			children = (
+				CAD55D112BD14B4A00070985 /* SwiftUImeetsMetal */,
+				CAD55D102BD14B4A00070985 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAD55D102BD14B4A00070985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D0F2BD14B4A00070985 /* SwiftUImeetsMetal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAD55D112BD14B4A00070985 /* SwiftUImeetsMetal */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D242BD14D9D00070985 /* Views */,
+				CAD55D232BD14D9500070985 /* Metal */,
+				CAD55D222BD14CAE00070985 /* Resources */,
+				CAD55D182BD14B4B00070985 /* Preview Content */,
+			);
+			path = SwiftUImeetsMetal;
+			sourceTree = "<group>";
+		};
+		CAD55D182BD14B4B00070985 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D192BD14B4B00070985 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAD55D222BD14CAE00070985 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D202BD14CA800070985 /* AssetImage.swift */,
+				CAD55D162BD14B4B00070985 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAD55D232BD14D9500070985 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D252BD14DFA00070985 /* ColorEffectShaders.metal */,
+				CAD55D2A2BD2936C00070985 /* LayerEffectShaders.metal */,
+				CAD55D322BD2A4C400070985 /* DistortionEffectShaders.metal */,
+				CAD55D382BD339FE00070985 /* OtherShaders.metal */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		CAD55D242BD14D9D00070985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D122BD14B4A00070985 /* SwiftUImeetsMetalApp.swift */,
+				CAD55D272BD14ED400070985 /* ColorEffectExamples */,
+				CAD55D2C2BD297A600070985 /* LayerEffectExamples */,
+				CAD55D312BD2A2EF00070985 /* DistortionEffectExamples */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAD55D272BD14ED400070985 /* ColorEffectExamples */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D142BD14B4A00070985 /* RecolorExampleView.swift */,
+				CAD55D282BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift */,
+				CAD55D362BD328CA00070985 /* AbstractTextureExampleView.swift */,
+			);
+			path = ColorEffectExamples;
+			sourceTree = "<group>";
+		};
+		CAD55D2C2BD297A600070985 /* LayerEffectExamples */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D2D2BD297CE00070985 /* PixelateExampleView.swift */,
+				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
+			);
+			path = LayerEffectExamples;
+			sourceTree = "<group>";
+		};
+		CAD55D312BD2A2EF00070985 /* DistortionEffectExamples */ = {
+			isa = PBXGroup;
+			children = (
+				CAD55D342BD2CAA500070985 /* WaveExampleView.swift */,
+			);
+			path = DistortionEffectExamples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAD55D0E2BD14B4A00070985 /* SwiftUImeetsMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD55D1D2BD14B4B00070985 /* Build configuration list for PBXNativeTarget "SwiftUImeetsMetal" */;
+			buildPhases = (
+				CAD55D0B2BD14B4A00070985 /* Sources */,
+				CAD55D0C2BD14B4A00070985 /* Frameworks */,
+				CAD55D0D2BD14B4A00070985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUImeetsMetal;
+			productName = SwiftUImeetsMetal;
+			productReference = CAD55D0F2BD14B4A00070985 /* SwiftUImeetsMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAD55D072BD14B4A00070985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CAD55D0E2BD14B4A00070985 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CAD55D0A2BD14B4A00070985 /* Build configuration list for PBXProject "SwiftUImeetsMetal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAD55D062BD14B4A00070985;
+			productRefGroup = CAD55D102BD14B4A00070985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAD55D0E2BD14B4A00070985 /* SwiftUImeetsMetal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAD55D0D2BD14B4A00070985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD55D1A2BD14B4B00070985 /* Preview Assets.xcassets in Resources */,
+				CAD55D172BD14B4B00070985 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAD55D0B2BD14B4A00070985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD55D152BD14B4A00070985 /* RecolorExampleView.swift in Sources */,
+				CAD55D2B2BD2936C00070985 /* LayerEffectShaders.metal in Sources */,
+				CAD55D372BD328CA00070985 /* AbstractTextureExampleView.swift in Sources */,
+				CAD55D212BD14CA900070985 /* AssetImage.swift in Sources */,
+				CAD55D332BD2A4C400070985 /* DistortionEffectShaders.metal in Sources */,
+				CAD55D302BD2A2C800070985 /* DotsExampleView.swift in Sources */,
+				CAD55D132BD14B4A00070985 /* SwiftUImeetsMetalApp.swift in Sources */,
+				CAD55D392BD339FE00070985 /* OtherShaders.metal in Sources */,
+				CAD55D292BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift in Sources */,
+				CAD55D352BD2CAA500070985 /* WaveExampleView.swift in Sources */,
+				CAD55D2E2BD297CE00070985 /* PixelateExampleView.swift in Sources */,
+				CAD55D262BD14DFA00070985 /* ColorEffectShaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAD55D1B2BD14B4B00070985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAD55D1C2BD14B4B00070985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAD55D1E2BD14B4B00070985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUImeetsMetal/Preview Content\"";
+				DEVELOPMENT_TEAM = THNASY6U4C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdicek.com.SwiftUImeetsMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAD55D1F2BD14B4B00070985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUImeetsMetal/Preview Content\"";
+				DEVELOPMENT_TEAM = THNASY6U4C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdicek.com.SwiftUImeetsMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAD55D0A2BD14B4A00070985 /* Build configuration list for PBXProject "SwiftUImeetsMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD55D1B2BD14B4B00070985 /* Debug */,
+				CAD55D1C2BD14B4B00070985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD55D1D2BD14B4B00070985 /* Build configuration list for PBXNativeTarget "SwiftUImeetsMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD55D1E2BD14B4B00070985 /* Debug */,
+				CAD55D1F2BD14B4B00070985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAD55D072BD14B4A00070985 /* Project object */;
+}
