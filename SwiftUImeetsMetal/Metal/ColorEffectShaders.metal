@@ -10,14 +10,16 @@ using namespace metal;
 
 // recolors non-transparent pixels
 [[ stitchable ]] half4 recolor(float2 position, half4 currentColor, half4 newColor) {
-    if(currentColor.a < 0.1) {
-        return currentColor.a;
-    }
-    return newColor;
+
+    // TODO: - Implementation
+
+    return currentColor;
 }
 
 // converts the view to black and white
 [[ stitchable ]] half4 blackAndWhite(float2 position, half4 color) {
-    float luminance = (color.r + color.g + color.b) / 3;
-    return half4(luminance, luminance, luminance, 1);
+
+    // TODO: - Implementation
+
+    return color;
 }
