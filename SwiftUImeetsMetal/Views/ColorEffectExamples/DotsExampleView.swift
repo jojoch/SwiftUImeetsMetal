@@ -15,11 +15,10 @@ struct DotsExampleView: View {
             Rectangle()
                 .visualEffect { content, geometryProxy in
                     content
-                        .layerEffect(ShaderLibrary.dots(
+                        .colorEffect(ShaderLibrary.dots(
                                 .float2(dragLocation),
                                 .float2(geometryProxy.size)
-                            ),
-                            maxSampleOffset: .zero
+                            )
                         )
                 }
                 .gesture(
