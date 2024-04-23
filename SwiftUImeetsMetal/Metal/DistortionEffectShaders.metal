@@ -12,10 +12,10 @@ using namespace metal;
 [[ stitchable ]] float2 waveStep1(float2 position, float2 frameSize, float spread) {
     float maxSize = max(frameSize.x, frameSize.y);
     float2 nPosition = position / maxSize;
-    float2 nScreenCenter = float2(0.5, frameSize.y / frameSize.x); // the image is wider
-    float2 distance = nPosition - nScreenCenter;
+    float2 nScreenCenter = (frameSize / 2) / maxSize;
+    float2 directionToCenter = nPosition - nScreenCenter;
     
-    float2 displacement = normalize(distance) * spread;
+    float2 displacement = normalize(directionToCenter) * spread;
     return (nPosition - displacement) * maxSize;
 }
 
@@ -24,9 +24,9 @@ using namespace metal;
     float maxSize = max(frameSize.x, frameSize.y);
     float2 nPosition = position / maxSize;
     float2 nTouch = touch / maxSize;
-    float2 distance = nPosition - nTouch;
+    float2 directionToTouch = nPosition - nTouch;
     
-    float2 displacement = normalize(distance) * spread;
+    float2 displacement = normalize(directionToTouch) * spread;
     return (nPosition - displacement) * maxSize;
 }
 
@@ -35,9 +35,9 @@ using namespace metal;
     float maxSize = max(frameSize.x, frameSize.y);
     float2 nPosition = position / maxSize;
     float2 nTouch = touch / maxSize;
-    float2 distance = nPosition - nTouch;
+    float2 directionToTouch = nPosition - nTouch;
 
-    float outerMap = 1.0 - smoothstep(spread - width, spread, length(distance));
+    float outerMap = 1.0 - smoothstep(spread - width, spread, length(directionToTouch));
     return float2(outerMap, outerMap);
 }
 
@@ -46,11 +46,11 @@ using namespace metal;
     float maxSize = max(frameSize.x, frameSize.y);
     float2 nPosition = position / maxSize;
     float2 nTouch = touch / maxSize;
-    float2 distance = nPosition - nTouch;
+    float2 directionToTouch = nPosition - nTouch;
 
-    float outerMap = 1.0 - smoothstep(spread - width, spread, length(distance));
+    float outerMap = 1.0 - smoothstep(spread - width, spread, length(directionToTouch));
 
-    float2 displacement = normalize(distance) * outerMap * amount;
+    float2 displacement = normalize(directionToTouch) * outerMap * amount;
     return (nPosition - displacement) * maxSize;
 }
 
@@ -59,10 +59,10 @@ using namespace metal;
     float maxSize = max(frameSize.x, frameSize.y);
     float2 nPosition = position / maxSize;
     float2 nTouch = touch / maxSize;
-    float2 distance = nPosition - nTouch;
+    float2 directionToTouch = nPosition - nTouch;
 
-    float outerMap = 1.0 - smoothstep(spread - width, spread, length(distance));
-    float innerMap = smoothstep(spread - (width * 2.0), spread - width, length(distance));
+    float outerMap = 1.0 - smoothstep(spread - width, spread, length(directionToTouch));
+    float innerMap = smoothstep(spread - (width * 2.0), spread - width, length(directionToTouch));
     float map = outerMap * innerMap;
 
     return float2(map, map);
@@ -73,12 +73,12 @@ using namespace metal;
     float maxSize = max(frameSize.x, frameSize.y);
     float2 nPosition = position / maxSize;
     float2 nTouch = touch / maxSize;
-    float2 distance = nPosition - nTouch;
+    float2 directionToTouch = nPosition - nTouch;
     
-    float outerMap = 1.0 - smoothstep(spread - width, spread, length(distance));
-    float innerMap = smoothstep(spread - (width * 2.0), spread - width, length(distance));
+    float outerMap = 1.0 - smoothstep(spread - width, spread, length(directionToTouch));
+    float innerMap = smoothstep(spread - (width * 2.0), spread - width, length(directionToTouch));
     float map = outerMap * innerMap;
 
-    float2 displacement = normalize(distance) * amount * map;
+    float2 displacement = normalize(directionToTouch) * amount * map;
     return (nPosition - displacement) * maxSize;
 }
