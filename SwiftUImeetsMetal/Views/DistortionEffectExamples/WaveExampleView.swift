@@ -50,4 +50,5 @@ struct WaveExampleView: View {
 #Preview {
     WaveExampleView()
         .background(Color.black)
+        .ignoresSafeArea()
 }

@@ -31,8 +31,6 @@ using namespace metal;
 
     float maxSize = max(frameSize.x, frameSize.y);
     float2 screenCenter = frameSize / 2;
-    float2 nPositionToScreenCenter = (position - screenCenter) / maxSize;
-    float2 nTouchToScreenCenter = (touch - screenCenter) / maxSize;
 
     // TODO: - Implementation
 
