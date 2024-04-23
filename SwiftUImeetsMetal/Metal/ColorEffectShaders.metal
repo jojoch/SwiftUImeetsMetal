@@ -23,3 +23,18 @@ using namespace metal;
 
     return color;
 }
+
+// blending dots
+[[ stitchable ]] half4 dots(float2 position, half4 color, float2 touch, float2 frameSize) {
+    half4 purpleColor = half4(0.5, 0, 1, 1);
+    half4 blackColor = half4(0, 0, 0, 1);
+
+    float maxSize = max(frameSize.x, frameSize.y);
+    float2 screenCenter = frameSize / 2;
+    float2 nPositionToScreenCenter = (position - screenCenter) / maxSize;
+    float2 nTouchToScreenCenter = (touch - screenCenter) / maxSize;
+
+    // TODO: - Implementation
+
+    return color;
+}

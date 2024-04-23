@@ -123,6 +123,7 @@
 			children = (
 				CAD55D142BD14B4A00070985 /* RecolorExampleView.swift */,
 				CAD55D282BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift */,
+				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
 				CAD55D362BD328CA00070985 /* AbstractTextureExampleView.swift */,
 			);
 			path = ColorEffectExamples;
@@ -132,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				CAD55D2D2BD297CE00070985 /* PixelateExampleView.swift */,
-				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
 			);
 			path = LayerEffectExamples;
 			sourceTree = "<group>";
