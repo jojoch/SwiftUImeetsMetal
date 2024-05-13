@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 enum AssetImage: String {
-    case logo = "mDevCampLogo"
+    case logo = "cocoaHeadsLogo"
     case header
 }
 

@@ -10,18 +10,16 @@ using namespace metal;
 
 // recolors non-transparent pixels
 [[ stitchable ]] half4 recolor(float2 position, half4 currentColor, half4 newColor) {
-
-    // TODO: - Implementation
-
-    return currentColor;
+    if(currentColor.a < 0.1) {
+        return currentColor;
+    }
+    return newColor;
 }
 
 // converts the view to black and white
 [[ stitchable ]] half4 blackAndWhite(float2 position, half4 color) {
-
-    // TODO: - Implementation
-
-    return color;
+    float luminance = (color.r + color.g + color.b) / 3;
+    return half4(luminance, luminance, luminance, 1);
 }
 
 // blending dots
@@ -31,8 +29,18 @@ using namespace metal;
 
     float maxSize = max(frameSize.x, frameSize.y);
     float2 screenCenter = frameSize / 2;
+    
+    float2 nPositionToCenter = (position - screenCenter) / maxSize;
+    float cDistance = length(nPositionToCenter) * 10;
+    
+    float2 nTouchToCenter = (touch - screenCenter) / maxSize;
+    float tDistance = length(nTouchToCenter - nPositionToCenter) * 20;
+    
+    float newColor = cDistance * cDistance * tDistance;
+    
+    if (newColor <= 1) {
+        return  purpleColor;
+    }
 
-    // TODO: - Implementation
-
-    return color;
+    return blackColor;
 }

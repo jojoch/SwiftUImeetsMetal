@@ -14,9 +14,9 @@ struct RecolorExampleView: View {
 
             Image(assetImage: .logo)?
                 .resizable()
-                .frame(width: 400, height: 200)
+                .scaledToFit()
                 .foregroundColor(.white)
-                .colorEffect(ShaderLibrary.recolor(.color(.purple)))
+               // .colorEffect(ShaderLibrary.recolor(.color(.purple)))
 
             Spacer()
         }

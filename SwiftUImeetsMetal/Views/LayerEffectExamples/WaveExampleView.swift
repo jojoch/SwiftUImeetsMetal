@@ -26,7 +26,7 @@ struct WaveExampleView: View {
                     .resizable()
                     .frame(width: headerFrame.width, 
                            height: headerFrame.height)
-                    .distortionEffect(
+                    .layerEffect(
                         ShaderLibrary.wave(
                             .float2(headerFrame),
                             .float2(location),

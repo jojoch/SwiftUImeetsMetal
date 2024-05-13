@@ -17,8 +17,8 @@ struct PixelateExampleView: View {
 
                 Image(assetImage: .header)?
                     .resizable()
-                    .frame(width: 400, height: 150)
-                    .layerEffect(
+                    .scaledToFit()
+                    .distortionEffect(
                         ShaderLibrary.pixelate(.float(elapsedTime)),
                         maxSampleOffset: .zero
                     )
