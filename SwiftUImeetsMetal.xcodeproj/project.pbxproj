@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				CAD55D252BD14DFA00070985 /* ColorEffectShaders.metal */,
-				CAD55D2A2BD2936C00070985 /* LayerEffectShaders.metal */,
 				CAD55D322BD2A4C400070985 /* DistortionEffectShaders.metal */,
+				CAD55D2A2BD2936C00070985 /* LayerEffectShaders.metal */,
 				CAD55D382BD339FE00070985 /* OtherShaders.metal */,
 			);
 			path = Metal;
@@ -112,8 +112,8 @@
 			children = (
 				CAD55D122BD14B4A00070985 /* SwiftUImeetsMetalApp.swift */,
 				CAD55D272BD14ED400070985 /* ColorEffectExamples */,
-				CAD55D2C2BD297A600070985 /* LayerEffectExamples */,
 				CAD55D312BD2A2EF00070985 /* DistortionEffectExamples */,
+				CAD55D2C2BD297A600070985 /* LayerEffectExamples */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +124,7 @@
 				CAD55D142BD14B4A00070985 /* RecolorExampleView.swift */,
 				CAD55D282BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift */,
 				CAD55D362BD328CA00070985 /* AbstractTextureExampleView.swift */,
+				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
 			);
 			path = ColorEffectExamples;
 			sourceTree = "<group>";
@@ -131,8 +132,7 @@
 		CAD55D2C2BD297A600070985 /* LayerEffectExamples */ = {
 			isa = PBXGroup;
 			children = (
-				CAD55D2D2BD297CE00070985 /* PixelateExampleView.swift */,
-				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
+				CAD55D342BD2CAA500070985 /* WaveExampleView.swift */,
 			);
 			path = LayerEffectExamples;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 		CAD55D312BD2A2EF00070985 /* DistortionEffectExamples */ = {
 			isa = PBXGroup;
 			children = (
-				CAD55D342BD2CAA500070985 /* WaveExampleView.swift */,
+				CAD55D2D2BD297CE00070985 /* PixelateExampleView.swift */,
 			);
 			path = DistortionEffectExamples;
 			sourceTree = "<group>";
