@@ -9,21 +9,21 @@ import SwiftUI
 
 struct BlackAndWhiteFilterExampleView: View {
     var body: some View {
-        VStack {
-            Spacer()
-
-            Image(assetImage: .header)?
-                .resizable()
-                .frame(width: 400, height: 150)
-                .colorEffect(ShaderLibrary.blackAndWhite())
-
-            Spacer()
-        }
+        Image(assetImage: .header)?
+            .resizable()
+            .scaledToFit()
+            .colorEffect(ShaderLibrary.blackAndWhite())
     }
 }
 
 #Preview {
-    BlackAndWhiteFilterExampleView()
-        .background(Color.black)
+    VStack {
+        Spacer()
+
+        BlackAndWhiteFilterExampleView()
+
+        Spacer()
+    }
+    .background(Color.black)
 }
 

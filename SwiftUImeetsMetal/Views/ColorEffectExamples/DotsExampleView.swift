@@ -11,23 +11,21 @@ struct DotsExampleView: View {
     @State private var dragLocation: CGPoint = .zero
 
     var body: some View {
-        VStack {
-            Rectangle()
-                .visualEffect { content, geometryProxy in
-                    content
-                        .colorEffect(ShaderLibrary.dots(
-                                .float2(dragLocation),
-                                .float2(geometryProxy.size)
-                            )
+        Rectangle()
+            .visualEffect { content, geometryProxy in
+                content
+                    .colorEffect(ShaderLibrary.dots(
+                            .float2(dragLocation),
+                            .float2(geometryProxy.size)
                         )
-                }
-                .gesture(
-                    DragGesture()
-                        .onChanged { gesture in
-                            self.dragLocation = gesture.location
-                        }
-                )
-        }
+                    )
+            }
+            .gesture(
+                DragGesture()
+                    .onChanged { gesture in
+                        self.dragLocation = gesture.location
+                    }
+            )
     }
 }
 

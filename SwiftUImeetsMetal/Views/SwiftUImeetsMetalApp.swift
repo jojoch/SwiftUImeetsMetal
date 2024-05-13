@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUImeetsMetalApp: App {
     var body: some Scene {
         WindowGroup {
-            RecolorExampleView()
+            WaveExampleView()
         }
     }
 }
