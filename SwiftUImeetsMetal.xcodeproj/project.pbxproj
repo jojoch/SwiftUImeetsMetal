@@ -125,6 +125,7 @@
 				CAD55D282BD150EE00070985 /* BlackAndWhiteFilterExampleView.swift */,
 				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
 				CAD55D362BD328CA00070985 /* AbstractTextureExampleView.swift */,
+				CAD55D2F2BD2A2C800070985 /* DotsExampleView.swift */,
 			);
 			path = ColorEffectExamples;
 			sourceTree = "<group>";
