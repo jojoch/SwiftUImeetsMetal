@@ -33,8 +33,8 @@ using namespace metal;
     float2 nPositionToCenter = (position - screenCenter) / maxSize;
     float cDistance = length(nPositionToCenter) * 10;
     
-    float2 nTouchToCenter = (touch - screenCenter) / maxSize;
-    float tDistance = length(nTouchToCenter - nPositionToCenter) * 20;
+    float2 nTouchToCenter = nPositionToCenter - ((touch - screenCenter) / maxSize);
+    float tDistance = length(nTouchToCenter) * 20;
     
     float newColor = cDistance * cDistance * tDistance;
     

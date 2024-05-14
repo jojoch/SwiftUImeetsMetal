@@ -10,8 +10,8 @@ using namespace metal;
 
 // pixelates layer by strength
 [[ stitchable ]] float2 pixelate(float2 position, float strength) {
-    float positionX = strength * round(position.x / strength);
-    float positionY = strength * round(position.y / strength);
+    float positionX = strength * floor(position.x / strength);
+    float positionY = strength * floor(position.y / strength);
 
     return float2(positionX, positionY);
 }
