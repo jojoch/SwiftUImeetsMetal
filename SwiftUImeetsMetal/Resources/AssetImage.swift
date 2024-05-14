@@ -13,12 +13,6 @@ enum AssetImage: String {
     case header
 }
 
-extension UIImage {
-    convenience init?(assetImage: AssetImage) {
-        self.init(named: assetImage.rawValue)
-    }
-}
-
 extension Image {
     init?(assetImage: AssetImage) {
         self.init(assetImage.rawValue)
